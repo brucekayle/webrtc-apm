@@ -12,3 +12,22 @@ try {
     e.printStackTrace();
 }
 ```
+
+### 导入依赖
+项目根目录 build.gradle 添加仓库:
+
+```groovy
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+添加项目依赖：
+
+```groovy
+dependencies {
+        implementation 'com.github.brucekayle:webrtc-apm:Tag'
+}
+```
